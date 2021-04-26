@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { BrowserRouter as Router } from 'react-router-dom'
+import ImageViewer from './ImageViewer';
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Router>
+      <ImageViewer></ImageViewer>
+    </Router>,
   document.getElementById('root')
 );
 
